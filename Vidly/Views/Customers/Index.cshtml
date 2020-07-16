@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+
+<table id="customers" class="table table-bordered table-hover">
+    <thead>
+        Customers
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@customer.Name</td>
+                </tr>
+            }
+    </tbody>
+</table>
